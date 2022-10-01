@@ -1,0 +1,22 @@
+#app-content {
+  background-color: #b38db7;
+  z-index: 10;
+
+  #main-content {
+    width: 46vw;
+    padding: 2vw;
+
+    p {
+      font-size: 25pt;
+      font-family: "Modern Antiqua";
+      color: #1c1c31;
+    }
+
+    h1 {
+      font-size: 60pt;
+      font-family: "Modern Antiqua";
+      color: #fff0ae;
+      margin: 0;
+    }
+  }
+}
