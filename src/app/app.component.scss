@@ -1,22 +1,83 @@
 #app-content {
-  background-color: #b38db7;
   z-index: 10;
+  display: flex;
+  height: fit-content;
+  font-family: "Modern Antiqua";
+  backdrop-filter: blur(0.3vmax);
 
   #main-content {
     width: 46vw;
     padding: 2vw;
+    background-color: #b38db7;
 
     p {
       font-size: 25pt;
-      font-family: "Modern Antiqua";
       color: #1c1c31;
     }
 
     h1 {
       font-size: 60pt;
-      font-family: "Modern Antiqua";
       color: #fff0ae;
       margin: 0;
+    }
+  }
+
+  #star-border-right {
+    background-image: url("/assets/starborderright.png");
+    background-color: #b38db7;
+    background-blend-mode: multiply;
+    mask-image: url("/assets/starborderright.png");
+    background-size: cover;
+    width: 12vw;
+    margin-right: -11vw;
+  }
+
+  #contact-content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    div {
+      width: 100%;
+      height: 10%;
+      background-color: #2b1c31;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      button {
+        width: 35%;
+        height: 70%;
+        font-family: "Modern Antiqua";
+        font-size: 20pt;
+        background-color: #1c1c31;
+        color: #b38db7;
+        border: none;
+        outline: none;
+
+        &:hover {
+          cursor: pointer;
+          outline: 1px solid #b38db7;
+        }
+      }
+    }
+
+    #star-border-bottom {
+      background-image: url("/assets/starborderbottom.png");
+      background-color: #2b1c31;
+      background-blend-mode: multiply;
+      mask-image: url("/assets/starborderbottom.png");
+      background-size: cover;
+      height: 12vw;
+      margin-bottom: -11vw;
+      z-index: -1;
+    }
+
+    img {
+      margin-top: auto;
+      width: 60%;
     }
   }
 }
