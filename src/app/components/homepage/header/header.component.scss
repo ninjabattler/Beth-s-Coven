@@ -7,34 +7,52 @@
   justify-content: flex-start;
   overflow: hidden;
   background-color: black;
+  color: #fff0ae;
+  font-family: "Modern Antiqua";
+  font-size: 15pt;
 
-  .image-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  h3 {
     position: absolute;
-    overflow: hidden;
+    font-size: 1em;
+  }
 
-    img {
-      width: 100vmax;
+  h1 {
+    position: absolute;
+    font-size: 5.33333em;
+    filter: drop-shadow(0px 0px 5px yellow);
+  }
 
-      &.ring {
-        animation: 10s linear 0s infinite ring-rotate;
-        filter: drop-shadow(0px 0px 5px yellow);
-      }
+  #background-animation {
+    all: inherit;
 
-      &.stars1 {
-        animation: 3s linear 0s infinite twinkle
-      }
+    .image-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      overflow: hidden;
 
-      &.stars2 {
-        animation: 3s linear 1s infinite twinkle
-      }
+      img {
+        width: 100vmax;
 
-      &.stars3 {
-        animation: 3s linear 2s infinite twinkle
+        &.ring {
+          animation: 10s linear 0s infinite ring-rotate;
+          filter: drop-shadow(0px 0px 5px yellow);
+        }
+
+        &.stars1 {
+          animation: 3s linear 0s infinite twinkle;
+        }
+
+        &.stars2 {
+          animation: 3s linear 1s infinite twinkle;
+        }
+
+        &.stars3 {
+          animation: 3s linear 2s infinite twinkle;
+        }
       }
     }
   }
