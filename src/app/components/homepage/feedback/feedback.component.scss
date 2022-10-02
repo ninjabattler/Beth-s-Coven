@@ -8,16 +8,7 @@
   background-color: #2b1c31;
   font-family: "Modern Antiqua";
   font-size: 35pt;
-}
-
-#stars-top {
-  background-color: #2b1c31;
-  mask-image: url("/assets/starbordertop.png");
-  mask-position: left bottom;
-  mask-size: cover;
-  height: 15vmin;
-  margin-top: -15vmin;
-  z-index: -1;
+  border-top: 1px solid #fff0ae;
 }
 
 #stars-bottom {
