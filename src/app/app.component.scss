@@ -1,3 +1,19 @@
+button {
+  width: 35%;
+  height: 70%;
+  font-family: "Modern Antiqua";
+  font-size: 20pt;
+  background-color: #1c1c31;
+  color: #b38db7;
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    outline: 1px solid #b38db7;
+  }
+}
+
 #app-content {
   z-index: 10;
   display: flex;
@@ -47,22 +63,6 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-
-      button {
-        width: 35%;
-        height: 70%;
-        font-family: "Modern Antiqua";
-        font-size: 20pt;
-        background-color: #1c1c31;
-        color: #b38db7;
-        border: none;
-        outline: none;
-
-        &:hover {
-          cursor: pointer;
-          outline: 1px solid #b38db7;
-        }
-      }
     }
 
     #star-border-bottom {
@@ -81,4 +81,26 @@
       width: 60%;
     }
   }
+}
+
+#stars-top {
+  background-color: #2b1c31;
+  mask-image: url("/assets/starbordertop.png");
+  mask-position: left bottom;
+  mask-size: cover;
+  height: 15vmin;
+}
+
+#end-section {
+  height: 20vmin;
+  margin: 0;
+  padding-bottom: 10vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #b38db7;
+  background-color: #2b1c31;
+  font-family: "Modern Antiqua";
+  font-size: 25pt;
 }

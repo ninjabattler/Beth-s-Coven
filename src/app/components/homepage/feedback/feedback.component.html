@@ -1,4 +1,4 @@
-<section>
+<section class="statement-container">
   <div id="stars-top"></div>
   <p id="feedback-statement">Hear what some of my satisfied clients have to say!</p>
   <div id="stars-bottom"></div>
@@ -16,8 +16,14 @@
 
       <div class="client-section">
         <span class="stars"
-          [ngStyle]="{'background-image': 'linear-gradient(90deg, #fff0ae ' + review.rating + '%, #2b1c31 ' + review.rating + '%)' }">★★★★★</span>
-        <img />
+          [ngStyle]="{'background-image': 'linear-gradient(90deg, #fff0ae ' + review.rating + '%, #2b1c31 ' + review.rating + '%)' }">
+          ★★★★★
+        </span>
+
+        <div class="client-details">
+          <span class="name">{{review.client}}</span>
+          <img />
+        </div>
       </div>
     </div>
 
