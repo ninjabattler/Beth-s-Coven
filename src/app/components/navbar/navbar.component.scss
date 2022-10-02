@@ -1,0 +1,39 @@
+#header {
+  width: 100vw;
+  height: 6vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c31;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #fff0ae;
+
+  h1 {
+    a {
+      color: #fff0ae;
+      text-decoration: none;
+      font-family: "Modern Antiqua";
+      font-size: 4vmin;
+      margin: 1vmin;
+    }
+  }
+
+  button {
+    width: fit-content;
+    height: 70%;
+    font-family: "Modern Antiqua";
+    font-size: 2vmin;
+    background-color: #2b1c31;
+    color: #b38db7;
+    border: none;
+    outline: none;
+    margin: 4vmin;
+
+    &:hover {
+      cursor: pointer;
+      outline: 1px solid #b38db7;
+    }
+  }
+}
