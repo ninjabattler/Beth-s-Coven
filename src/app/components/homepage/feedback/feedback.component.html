@@ -3,3 +3,23 @@
   <p id="feedback-statement">Hear what some of my satisfied clients have to say!</p>
   <div id="stars-bottom"></div>
 </section>
+
+<div id="carousel-container">
+  <section class="buttons">
+    <button (click)="updateCurrentReview(currentReview - 1)">&lt;</button>
+    <button (click)="updateCurrentReview(currentReview + 1)">&gt;</button>
+  </section>
+  <section id="review-carousel" [ngStyle]="{'margin-left': -(currentReview * 200) + 'vw'}">
+
+    <div class="review" *ngFor="let review of reviews">
+      <p class="bubble">{{review.content}}</p>
+
+      <div class="client-section">
+        <span class="stars"
+          [ngStyle]="{'background-image': 'linear-gradient(90deg, #fff0ae ' + review.rating + '%, #2b1c31 ' + review.rating + '%)' }">★★★★★</span>
+        <img />
+      </div>
+    </div>
+
+  </section>
+</div>
