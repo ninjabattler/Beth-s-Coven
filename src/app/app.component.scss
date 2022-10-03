@@ -19,8 +19,8 @@ button {
   display: flex;
   height: fit-content;
   font-family: "Modern Antiqua";
-  backdrop-filter: blur(0.3vmax);
   border-top: 1px solid #fff0ae;
+  filter: drop-shadow(0px -2px 3px black);
 
   #main-content {
     width: 46vw;

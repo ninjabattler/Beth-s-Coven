@@ -2,26 +2,31 @@
   {
     "client": "Alysa",
     "content": "Beth's services are perfectly on point! This one time, I was worried about failing my drivers test, so I went to get a reading from Beth so I knew what to expect, she said I would most likely fail, and I did!!!",
-    "rating": 100
+    "rating": 100,
+    "portrait": "/assets/alysaportrait.png"
   },
   {
     "client": "Alysa",
     "content": "She also taught me a lot about the spirit world, and how ghosts work. She told me that, with enough practice, I can also become a medium and protect people!!!",
-    "rating": 100
+    "rating": 100,
+    "portrait": "/assets/alysaportrait.png"
   },
   {
     "client": "Alysa",
     "content": "I'm still not good enough though. This one time, the house was haunted, and I tried doing a seance on my own to get rid of it, and the ghost got mad and knocked over a candle and burnt the couch!!!",
-    "rating": 100
+    "rating": 100,
+    "portrait": "/assets/alysaportrait.png"
   },
   {
     "client": "Alysa",
     "content": "Thankfully she was able to help me get rid of it with another seance when I asked her, and she told me what I did wrong. We also got Sam to help us because more people helps get rid of ghosts faster!!!",
-    "rating": 100
+    "rating": 100,
+    "portrait": "/assets/alysaportrait.png"
   },
   {
     "client": "Sam",
     "content": "A friend of mine made me do a seance with her and Beth one time when she was afraid we were haunted. It went well, we spoke to the ghost and it went away shortly after.",
-    "rating": 80
+    "rating": 80,
+    "portrait": "/assets/samportrait.png"
   }
 ]
