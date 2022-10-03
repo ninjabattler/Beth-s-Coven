@@ -13,11 +13,17 @@
 
   h1 {
     a {
+      display: flex;
+      align-items: center;
       color: #fff0ae;
       text-decoration: none;
       font-family: "Modern Antiqua";
       font-size: 4vmin;
-      margin: 40px;
+
+      img {
+        height: 5.5vmin;
+        margin: 2.5vmin
+      }
     }
   }
 
