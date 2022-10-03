@@ -12,20 +12,15 @@
 
   h3 {
     position: absolute;
-    font-size: 1em;
-  }
-
-  h1 {
-    position: absolute;
-    font-size: 5.33333em;
-    filter: drop-shadow(0px 0px 5px yellow);
+    font-size: 2em;
+    filter: drop-shadow(0px 0px 2px black) drop-shadow(0px 0px 2px black);
   }
 
   #background-animation {
     all: inherit;
 
     .image-container {
-      width: 100vw;
+      width: 99vw;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -38,12 +33,19 @@
       &.beth {
         position: absolute;
         filter: none;
+
+        img {
+          width: auto;
+          height: 100vh;
+        }
       }
 
       img {
-        width: 100vmax;
+        height: 100vh;
 
         &.ring {
+          height: auto;
+          width: 100vw;
           animation: 10s linear 0s infinite ring-rotate;
           filter: drop-shadow(0px 0px 5px yellow);
         }
