@@ -8,7 +8,7 @@
   overflow: hidden;
   color: #fff0ae;
   font-family: "Modern Antiqua";
-  font-size: 15pt;
+  font-size: 2vmin;
 
   h3 {
     position: absolute;
@@ -60,6 +60,35 @@
 
         &.stars3 {
           animation: 3s linear 2s infinite twinkle;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    height: calc(100vh - 12vmin);
+
+    #background-animation {
+      .image-container {
+        height: calc(100vh - 12vmin);
+        &.beth {
+          img {
+            width: 240vw;
+            height: auto;
+            margin-top: auto;
+          }
+        }
+
+        img {
+          width: auto;
+          height: 100vh;
+
+          &.ring {
+            height: 100vh;
+            margin-top: 43vh;
+            width: auto;
+            filter: drop-shadow(0px 0px 2px yellow);
+          }
         }
       }
     }

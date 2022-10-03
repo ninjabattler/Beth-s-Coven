@@ -22,7 +22,7 @@
 
       img {
         height: 5.5vmin;
-        margin: 2.5vmin
+        margin: 2.5vmin;
       }
     }
   }
@@ -41,6 +41,26 @@
     &:hover {
       cursor: pointer;
       outline: 1px solid #b38db7;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    height: 12vmin;
+    justify-content: center;
+
+    h1 {
+      a {
+        font-size: 5vmin;
+
+        img {
+          height: 10vmin;
+          margin: 2.5vmin;
+        }
+      }
+    }
+
+    button {
+      display: none;
     }
   }
 }

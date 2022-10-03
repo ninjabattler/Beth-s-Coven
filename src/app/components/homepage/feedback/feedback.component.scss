@@ -10,6 +10,14 @@
   font-size: 5vmin;
   border-top: 1px solid #fff0ae;
   filter: drop-shadow(0px -2px 3px black);
+
+  @media only screen and (max-width: 425px) {
+    width: 80vw;
+    padding: 3vmin;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+  }
 }
 
 #stars-bottom {
@@ -121,6 +129,57 @@
             background-color: #2b1c31;
             border: 2px solid #b38db7;
             border-radius: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    height: 50vh;
+    .buttons {
+      button {
+        font-size: 7vmin;
+
+        &:hover {
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    #review-carousel {
+      margin-top: -15vh;
+
+      .review {
+        height: 48vh;
+
+        .bubble {
+          font-size: 4vmin;
+        }
+
+        .client-section {
+          height: fit-content;
+
+          .stars {
+            font-size: 3.5vmin;
+          }
+
+          .client-details {
+            display: flex;
+            align-items: center;
+
+            .name {
+              font-size: 3.5vmin;
+            }
+
+            img {
+              width: 13vmin;
+              height: 13vmin;
+              background-color: #2b1c31;
+              border: 1Spx solid #b38db7;
+              border-radius: 100%;
+            }
           }
         }
       }
