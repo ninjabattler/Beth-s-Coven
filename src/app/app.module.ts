@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './pages/index/index.component';
 import { BookAppointmentComponent } from './pages/book-appointment/book-appointment.component';
+import { FormComponent } from './components/book-appointment/form/form.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { BookAppointmentComponent } from './pages/book-appointment/book-appointm
     FooterComponent,
     NavbarComponent,
     IndexComponent,
-    BookAppointmentComponent
+    BookAppointmentComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

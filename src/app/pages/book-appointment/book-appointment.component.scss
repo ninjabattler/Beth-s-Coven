@@ -1,0 +1,23 @@
+#title {
+  color: #fff0ae;
+  text-align: center;
+  font-size: 7vmin;
+  filter: drop-shadow(0px 0px 2px #fff0ae);
+}
+
+#stars-top, #stars-bottom {
+  background-color: #b38db7;
+  mask-image: url("/assets/starbordertop.png");
+  mask-position: left bottom;
+  mask-size: cover;
+  height: 15vmin;
+}
+
+#stars-bottom {
+  mask-image: url("/assets/starborderbottom.png");
+}
+
+#form-container {
+  padding-bottom: 10vmin;
+  background-color: #b38db7;
+}

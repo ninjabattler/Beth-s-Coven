@@ -1,0 +1,34 @@
+input, textarea {
+  margin: 1vmin;
+  color: #b38db7;
+  background-color: #1c1c31;
+  border: 0.1vmin solid #fff0ae;
+  outline: none;
+  font-size: 0.8em;
+  border-radius: 1vmin;
+  padding: 0.5vmin;
+}
+
+textarea {
+  width: 70%;
+  height: 20vmin;
+  margin-left: auto;
+}
+
+#form {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vmin;
+
+  .row-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
