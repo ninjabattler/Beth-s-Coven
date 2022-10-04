@@ -8,6 +8,7 @@ import { FeedbackComponent } from './components/homepage/feedback/feedback.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './pages/index/index.component';
+import { BookAppointmentComponent } from './pages/book-appointment/book-appointment.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IndexComponent } from './pages/index/index.component';
     FeedbackComponent,
     FooterComponent,
     NavbarComponent,
-    IndexComponent
+    IndexComponent,
+    BookAppointmentComponent
   ],
   imports: [
     BrowserModule,

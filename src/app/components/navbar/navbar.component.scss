@@ -27,9 +27,12 @@
     }
   }
 
-  button {
+  #appointment-link {
     width: fit-content;
-    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     font-family: "Modern Antiqua";
     font-size: 2vmin;
     background-color: #2b1c31;
@@ -37,6 +40,7 @@
     border: none;
     outline: none;
     margin: 40px;
+    text-decoration: none;
 
     &:hover {
       cursor: pointer;
