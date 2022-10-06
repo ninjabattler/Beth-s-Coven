@@ -1,19 +1,5 @@
-#homepage-header {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  color: #fff0ae;
-  font-size: 2vmin;
-
-  h3 {
-    position: absolute;
-    font-size: 2em;
-    filter: drop-shadow(0px 0px 2px black) drop-shadow(0px 0px 2px black);
-  }
+#background-animation {
+  all: inherit;
 
   .image-container {
     width: 99vw;
@@ -25,16 +11,6 @@
     z-index: -1;
     overflow: hidden;
     filter: blur(0.1vmax);
-
-    &.beth {
-      position: absolute;
-      filter: none;
-
-      img {
-        width: auto;
-        height: 100vh;
-      }
-    }
 
     img {
       height: 100vh;
@@ -61,17 +37,8 @@
   }
 
   @media only screen and (max-width: 425px) {
-    height: calc(100vh - 12vmin);
-
     .image-container {
       height: calc(100vh - 12vmin);
-      &.beth {
-        img {
-          width: 240vw;
-          height: auto;
-          margin-top: auto;
-        }
-      }
 
       img {
         width: auto;

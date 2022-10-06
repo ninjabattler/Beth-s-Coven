@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './pages/index/index.component';
 import { BookAppointmentComponent } from './pages/book-appointment/book-appointment.component';
 import { FormComponent } from './components/book-appointment/form/form.component';
+import { BackgroundComponent } from './components/background/background.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormComponent } from './components/book-appointment/form/form.component
     NavbarComponent,
     IndexComponent,
     BookAppointmentComponent,
-    FormComponent
+    FormComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
