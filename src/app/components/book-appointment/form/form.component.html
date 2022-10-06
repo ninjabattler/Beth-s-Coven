@@ -1,14 +1,31 @@
-<section id="form">
-  <div class="row-container">
-    <label for="firstName">First Name: </label>
-    <input id="firstName" type="text" [formControl]="firstName">
+<form id="form">
+  <div class="row-container start">
+    <label>
+      <span class="required-tag">*</span>Service:
+    </label>
+    <select name="readingOptions" [formControl]="chosenReading">
+      <option *ngFor="let option of readings" [ngValue]="option">
+        {{option}}
+      </option>
+    </select>
+  </div>
 
-    <label for="lastName">Last Name: </label>
+  <div class="row-container start">
+    <label for="firstName">
+      <span class="required-tag">*</span>First Name:
+    </label>
+    <input id="firstName" type="text" [formControl]="firstName">
+  </div>
+
+  <div class="row-container start">
+    <label for="lastName">
+      <span class="required-tag">*</span>Last Name:
+    </label>
     <input id="lastName" type="text" [formControl]="lastName">
   </div>
 
-  <div class="row-container">
+  <div class="row-container start">
     <label for="additionalInfo">Additional Info: </label>
     <textarea id="additionalInfo" type="text" [formControl]="additionalInfo"></textarea>
   </div>
-</section>
+</form>

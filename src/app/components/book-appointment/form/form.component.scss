@@ -1,4 +1,5 @@
-input, textarea {
+input, textarea, option, select {
+  width: 30%;
   margin: 1vmin;
   color: #b38db7;
   background-color: #1c1c31;
@@ -9,13 +10,22 @@ input, textarea {
   padding: 0.5vmin;
 }
 
+label {
+  width: 20%;
+  color: #1c1c31;
+}
+
 textarea {
   width: 70%;
   height: 20vmin;
-  margin-left: auto;
+}
+
+.required-tag {
+  color: #fff0ae;
 }
 
 #form {
+  min-width: 50%;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -30,5 +40,9 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.start {
+      justify-content: flex-start;
+    }
   }
 }

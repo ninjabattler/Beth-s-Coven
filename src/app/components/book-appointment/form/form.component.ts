@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms'
+import { FormControl, Validators } from '@angular/forms'
 
 @Component({
   selector: 'app-form',
@@ -7,8 +7,10 @@ import { FormControl } from '@angular/forms'
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  firstName = new FormControl('');
-  lastName = new FormControl('');
+  readings: string[] = ['Spiritual Communication', 'Fortune Telling', 'Q&A']
+  chosenReading = new FormControl('');
+  firstName = new FormControl('', Validators.required);
+  lastName = new FormControl('', Validators.required);
   additionalInfo = new FormControl('');
 
   constructor() { }
